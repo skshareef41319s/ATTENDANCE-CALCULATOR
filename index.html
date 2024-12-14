@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Attendance Calculator</h1>
+    <p class="tagline">Track your attendance in style! 🎓</p>
+    <div class="form-container">
+      <label for="attended-classes">Attended Classes:</label>
+      <input type="number" id="attended-classes" placeholder="Enter attended classes" min="0">
+
+      <label for="total-classes">Total Classes:</label>
+      <input type="number" id="total-classes" placeholder="Enter total classes" min="0">
+
+      <label for="attendance-threshold">Required Percentage:</label>
+      <input type="range" id="attendance-threshold" min="60" max="95" step="5">
+      <div id="threshold-value">Required: 75%</div>
+
+      <button id="calculate-button">Calculate</button>
+    </div>
+    <div id="output" class="output"></div>
+  </div>
+  <!-- GitHub Footer Link -->
+<a href="https://github.com/skshareef41319s/ATTENDANCE-CALCULATOR" class="footer" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"> GitHub Repo
+  </a>
+  
+</body>
+<script src="script.js"></script>
+</html>
