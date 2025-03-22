@@ -29,3 +29,6 @@ To get a local copy up and running, follow these steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/skshareef41319s/ATTENDANCE-CALCULATOR.git
+
+## Usage
+Use live server to start the server on any web browser
