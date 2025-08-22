@@ -1,0 +1,255 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #f9f9f9, #f0f0f0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #2d3436;
+}
+
+/*MAIN CONTAINER*/
+.container {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  padding: 40px 32px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/*TITLES*/
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+  letter-spacing: 0.3px;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+  font-style: italic;
+  color: #555;
+  opacity: 0.85;
+}
+
+/*FORM ELEMENTS*/
+label {
+  display: block;
+  margin-top: 16px;
+  font-size: 0.92rem;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+}
+
+input[type="number"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Inputs */
+input[type="number"] {
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+input[type="number"]:focus {
+  border: 2px solid #74b9ff;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(116, 185, 255, 0.25);
+}
+
+/* Button */
+button {
+  margin-top: 22px;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 14px rgba(116, 185, 255, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0px 6px 20px rgba(116, 185, 255, 0.35);
+}
+
+/*THRESHOLD SLIDER*/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: rgba(200, 200, 200, 0.4);
+  border-radius: 10px;
+  margin: 18px 0;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  cursor: grab;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+  background: linear-gradient(135deg, #6c5ce7, #0984e3);
+}
+
+#threshold-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+/*OUTPUT*/
+.output {
+  margin-top: 22px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: scale(0.96);
+  transition: all 0.5s ease;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.output.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer fixed at bottom width */
+.footer {
+  margin-top: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  color: #444;
+}
+
+.footer .made {
+  font-weight: 500;
+}
+
+.footer .github-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.footer .github-link:hover {
+  color: #000;
+}
+
+.footer .github-link img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+
+/* Responsiveness */
+
+/* Small phones */
+@media (max-width: 400px) {
+  .container {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .tagline {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 0.85rem;
+  }
+  input[type="number"],
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .output {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+  .footer {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .tagline {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 460px;
+  }
+}
