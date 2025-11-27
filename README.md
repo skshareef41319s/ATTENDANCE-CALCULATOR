@@ -1,34 +1,22 @@
-# 🎓 Attendance Calculator
+# Attendance Calculator
 
-A simple yet powerful **Attendance Calculator Web App** built with **HTML, CSS, and JavaScript**.  
-It helps students calculate their attendance percentage and determine how many more classes they can miss (or need to attend) to stay within the eligibility threshold.
+A simple web app to calculate attendance percentage and determine how many classes you can miss or need to attend to meet a chosen eligibility threshold. The app is built with plain HTML, CSS, and JavaScript and is designed to be lightweight, responsive, and easy to use.
 
----
+## Features
 
-## 🚀 Features
-- ✅ Calculate **current attendance percentage** (accurate up to 2 decimal places)  
-- ✅ Displays whether you are **safe or at risk**  
-- ✅ Tells you **how many classes you can miss** or **need to attend** to meet the threshold  
-- ✅ Clean, minimal, and classic design with a premium font  
-- ✅ Responsive and easy-to-use interface  
+- Calculate current attendance percentage (rounded to two decimal places)
+- Show whether the student is within the eligibility threshold or at risk
+- Display how many classes the student can miss without falling below the threshold
+- Display how many additional classes the student must attend to reach the threshold
+- Clean, minimal design and responsive layout
 
----
+## Technologies
 
-## 🛠️ Tech Stack
-- **HTML5** – Structure  
-- **CSS3** – Styling (Minimal & Classic Theme)  
-- **JavaScript (Vanilla JS)** – Logic & Interactivity  
+- HTML5
+- CSS3
+- JavaScript (vanilla)
 
----
-
-## 📷 Screenshot
-
-![Attendance Calculator](./screenshot.png)  
-*Add a screenshot of your web app and name it `screenshot.png` in the repo.*
-
----
-
-## 📂 Project Structure
+## Project structure
 
 ```
 .
@@ -38,57 +26,52 @@ It helps students calculate their attendance percentage and determine how many m
 └── README.md       # Documentation
 ```
 
----
+## Quick start
 
-## ⚡ How to Use
-
-1. **Clone the repository:**
-
+1. Clone the repository
    ```bash
    git clone https://github.com/skshareef41319s/CALCULATOR-PROJECT.git
-   ```
-
-2. **Open the project folder:**
-   ```bash
    cd CALCULATOR-PROJECT
    ```
 
-3. **Open `index.html` in your browser.**
+2. Open the project
+   - Open `index.html` in your browser (double-click the file or serve it with a static server).
 
-4. **Enter total classes and attended classes, then click Calculate.**
+3. Usage
+   - Enter the total number of classes and the number of attended classes.
+   - Optionally set the eligibility threshold (default 75%).
+   - Click the Calculate button to see:
+     - Current attendance percentage
+     - Whether you are safe or at risk
+     - How many classes you can still miss, or how many you need to attend
 
-The app will show:
-- Your current percentage
-- If you are safe or need to attend more classes
-- How many classes you can miss without going below threshold
+## Example
 
----
+Input:
+- Total classes: 50
+- Attended classes: 40
+- Threshold: 75%
 
-## 📌 Example
+Output:
+- Current attendance: 80.00%
+- Status: Safe
+- You can miss 3 more classes before falling below 75%
 
-**Input:**
-- Total Classes = 50
-- Attended Classes = 40
-- Threshold = 75%
+## Implementation notes and suggestions
 
-**Output:**
-- Current Attendance = 80%
-- Status = ✅ Safe, no worries
-- You can still miss 3 classes before dropping below 75%
+- The current example stores no data persistently; it is intended as a local, client-side tool.
+- Consider adding input validation to prevent negative or non-numeric entries.
+- For a classroom-level tool, add persistence (localStorage or a backend) and bulk input features.
+- If this will be used for real academic records, validate edge cases and account for late/partial attendance policies.
 
----
+## Screenshot
 
-## ❤️ Credits
+Place a screenshot named `screenshot.png` in the repository root to show the app in the README.
 
-Made with ❤️ by Shareef
+## License
 
----
+This project is open source. Add a LICENSE file (for example, the MIT License) if you want to make the license explicit.
 
-## 📜 License
+## Author
 
-This project is open-source and available under the [MIT License](./LICENSE).
-
----
-
-> If you want to make your project look even more professional, consider adding a LICENSE file (MIT).  
-> *Let me know if you want it drafted for you!*
+Created by Shareef
