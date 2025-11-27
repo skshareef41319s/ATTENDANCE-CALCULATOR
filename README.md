@@ -64,14 +64,6 @@ Output:
 - For a classroom-level tool, add persistence (localStorage or a backend) and bulk input features.
 - If this will be used for real academic records, validate edge cases and account for late/partial attendance policies.
 
-## Screenshot
-
-Place a screenshot named `screenshot.png` in the repository root to show the app in the README.
-
-## License
-
-This project is open source. Add a LICENSE file (for example, the MIT License) if you want to make the license explicit.
-
 ## Author
 
 Created by Shareef
